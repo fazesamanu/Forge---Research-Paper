@@ -1,0 +1,28 @@
+# Datasets (~50+ GB WFlib .npz archives & generated defense caches)
+# Download anytime via: python -m forge.data.download_datasets --records 13731720 --table8_only
+datasets/
+*.npz
+*.npz.part
+
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments & IDEs
+.venv/
+venv/
+env/
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# NOTE ON MODEL CHECKPOINTS (~1.22 GB across 147 .pt files):
+# Checkpoints are currently NOT ignored by default if you upload only small weights,
+# OR uncomment the line below if your GitHub repo exceeds normal size limits (~100 MB/file, ~1-2 GB total):
+# checkpoints/
